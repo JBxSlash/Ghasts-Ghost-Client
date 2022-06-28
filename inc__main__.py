@@ -163,6 +163,8 @@ def main():
         window.Element('_A_').Update(('Off','On')[autoclick], button_color=(('white', ('light salmon', 'light green')[autoclick])))
         if event == 'toggle':
             toggled = not toggled
+        window.Element('toggle').Update(('Off','On')[toggled], button_color=(('white', ('light salmon', 'light green')[toggled])))
+
         if event == 'right':
             tcb = not tcb
         window.Element('right').Update(('Left','Right')[tcb], button_color=(('white', ('light blue', 'light blue')[tcb])))
